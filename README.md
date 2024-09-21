@@ -1,47 +1,34 @@
-# rand_ext
 
-**Description:**
+Overview
+rand_ext is a lightweight PostgreSQL extension written in C that adds a powerful function called random_between(low, high).
+This function allows users to generate random integers between two specified values, making it easy to incorporate randomness into your SQL queries and applications.
 
-`rand_ext` is a PostgreSQL extension designed to provide a simple and efficient way to generate random integers within a specified range. This extension includes the `random_between(low, high)` function, which returns a random integer between the specified low and high values, inclusive.
+Features
+Random Integer Generation: Generate random integers within a specified range.
+Efficient: Built using C for high performance and efficiency.
 
-## Features
+Installation
 
-- **`random_between(low, high)`**: Generates a random integer between `low` and `high`. 
+Clone the repository:
+git clone https://github.com/iraklidd/random_between_postgres.git
+cd random_between_postgres
 
-## Installation
-
-1. Clone the repository:
-   ```bash
-   git clone (https://github.com/iraklidd/random_between_postgres)
-   cd rand_ext
-Compile the extension:
-
-bash
-Copy code
+Build and install the extension:
 make
-Install the extension:
+sudo make install
 
-bash
-Copy code
-make install
-Enable the extension in PostgreSQL:
-
-sql
-Copy code
+Load the extension in your PostgreSQL database:
 CREATE EXTENSION rand_ext;
-Usage Example
-To generate a random integer between 1 and 10, use the following SQL command:
 
-sql
-Copy code
+Usage
+
+You can use the random_between function as follows:
+
 SELECT random_between(1, 10);
+This will return a random integer between 1 and 10.
+
+Contributing
+Feel free to submit issues and pull requests. Contributions are welcome!
+
 License
-This extension is licensed under the MIT License. See the LICENSE file for details.
-
-Contact
-For any questions or support, please reach out to [Your Name/Email].
-
-css
-Copy code
-
-Make sure to replace https://github.com/iraklidd/random_between_postgres and iraklidd11@gmail.com with your actual GitHub repository link and contact information.
+This project is licensed under the MIT License.
