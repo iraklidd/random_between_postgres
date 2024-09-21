@@ -12,7 +12,7 @@
 
 1. Clone the repository:
    ```bash
-   git clone [<repository-url>](https://github.com/iraklidd/random_between_postgres)
+   git clone (https://github.com/iraklidd/random_between_postgres)
    cd rand_ext
 Compile the extension:
 
