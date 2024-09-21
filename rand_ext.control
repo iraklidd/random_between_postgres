@@ -1,0 +1,4 @@
+# rand_ext.control
+default_version = '1.0'
+comment = 'Extension for random functions'
+module_pathname = '$libdir/rand_ext'
